@@ -1,1 +1,1 @@
-# green-habits
+# greenpath
