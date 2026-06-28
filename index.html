@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="GreenPath – Dein persönlicher Nachhaltigkeits-Tracker für grüne Gewohnheiten, Impact-Messung und nachhaltigen Lifestyle." />
+  <meta name="theme-color" content="#3d8c32" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>GreenPath – Grüner Leben, Schritt für Schritt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+      <a class="nav-brand" href="#" onclick="navigate('dashboard');return false;">
+        <div class="nav-brand-icon">🌿</div>
+        <span class="nav-brand-name">GreenPath</span>
+      </a>
+      <div class="nav-actions">
+        <div class="nav-xp-badge" onclick="navigate('gamification')">
+          <span class="xp-icon">⭐</span>
+          <span id="nav-xp">0 XP</span>
+        </div>
+        <button class="theme-toggle" id="theme-btn" aria-label="Theme wechseln">🌙</button>
+      </div>
+    </nav>
+
+    <div class="app-body">
+
+      <!-- Sidebar (Desktop) -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-item active" data-view="dashboard">
+          <span class="sidebar-icon">🏠</span>
+          <span class="sidebar-label">Dashboard</span>
+        </div>
+        <div class="sidebar-item" data-view="actions">
+          <span class="sidebar-icon">✅</span>
+          <span class="sidebar-label">Daily Actions</span>
+        </div>
+        <div class="sidebar-item" data-view="challenges">
+          <span class="sidebar-icon">🏆</span>
+          <span class="sidebar-label">Challenges</span>
+        </div>
+        <div class="sidebar-item" data-view="impact">
+          <span class="sidebar-icon">🌍</span>
+          <span class="sidebar-label">Impact</span>
+        </div>
+        <div class="sidebar-item" data-view="investment">
+          <span class="sidebar-icon">💚</span>
+          <span class="sidebar-label">Green Investments</span>
+        </div>
+        <div class="sidebar-item" data-view="tracker">
+          <span class="sidebar-icon">📊</span>
+          <span class="sidebar-label">Zero Waste Tracker</span>
+        </div>
+        <div class="sidebar-item" data-view="insights">
+          <span class="sidebar-icon">📈</span>
+          <span class="sidebar-label">Insights</span>
+        </div>
+        <div class="sidebar-item" data-view="gamification">
+          <span class="sidebar-icon">🎮</span>
+          <span class="sidebar-label">Fortschritt</span>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+
+        <!-- Dashboard -->
+        <section id="view-dashboard" class="view active">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Daily Actions -->
+        <section id="view-actions" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Challenges -->
+        <section id="view-challenges" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Impact -->
+        <section id="view-impact" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Green Investments -->
+        <section id="view-investment" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Zero Waste Tracker -->
+        <section id="view-tracker" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Insights -->
+        <section id="view-insights" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+        <!-- Gamification -->
+        <section id="view-gamification" class="view">
+          <!-- Rendered by JS -->
+        </section>
+
+      </main>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav">
+      <div class="bottom-nav-item active" data-view="dashboard">
+        <span class="bottom-nav-icon">🏠</span>
+        <span>Home</span>
+      </div>
+      <div class="bottom-nav-item" data-view="actions">
+        <span class="bottom-nav-icon">✅</span>
+        <span>Aktionen</span>
+      </div>
+      <div class="bottom-nav-item" data-view="challenges">
+        <span class="bottom-nav-icon">🏆</span>
+        <span>Challenges</span>
+      </div>
+      <div class="bottom-nav-item" data-view="impact">
+        <span class="bottom-nav-icon">🌍</span>
+        <span>Impact</span>
+      </div>
+      <div class="bottom-nav-item" data-view="investment">
+        <span class="bottom-nav-icon">💚</span>
+        <span>Invest</span>
+      </div>
+      <div class="bottom-nav-item" data-view="tracker">
+        <span class="bottom-nav-icon">📊</span>
+        <span>Tracker</span>
+      </div>
+      <div class="bottom-nav-item" data-view="insights">
+        <span class="bottom-nav-icon">📈</span>
+        <span>Insights</span>
+      </div>
+      <div class="bottom-nav-item" data-view="gamification">
+        <span class="bottom-nav-icon">🎮</span>
+        <span>Levels</span>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
