@@ -1382,6 +1382,73 @@ body {
   }
 }
 
+/* --- Category Tabs --- */
+.cat-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 2px 0;
+}
+
+.cat-tab {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-light);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cat-tab:hover {
+  border-color: var(--green-300);
+  background: var(--green-50);
+  color: var(--green-700);
+}
+
+.cat-tab.active {
+  background: var(--green-500);
+  border-color: var(--green-500);
+  color: white;
+}
+
+/* --- 30-Day Mini Chart --- */
+.month-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 52px;
+  padding: 0 2px;
+}
+
+.month-bar {
+  flex: 1;
+  background: var(--green-400);
+  border-radius: 2px 2px 0 0;
+  min-height: 2px;
+  opacity: 0.7;
+  transition: opacity var(--transition);
+  cursor: default;
+}
+
+.month-bar:hover {
+  opacity: 1;
+}
+
+/* --- Icon color variants --- */
+.icon-rose { background: rgba(231, 111, 81, 0.12); }
+
+/* --- Textarea form input --- */
+textarea.form-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
 /* --- Utilities --- */
 .mt-4 { margin-top: 4px; }
 .mt-8 { margin-top: 8px; }
